@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TSR Client Room</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"></style>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <script src="clipboard.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <meta charset="utf-8">
+</head>
+<body>
+<div id="app-container">
+    <h1>TSR CLIENT ROOM</h1>
+    <div class="wrap">
+		<div class="modal-container">
+  			<button class="modal-button">?</button>
+  		<div class="modal">
+        	<li class="howto"><span class="bold">Step 1:</span> Select the category below that you would like to view past proofs from</li>
+        	<li class="howto"><span class="bold">Step 2:</span> Download any proofs you would like to use to order</li>
+        	<li class="howto"><span class="bold">Step 3:</span> Attach your download on an email to sales@sportexapparel.com</li>
+        	<li class="howto"><span class="bold">Step 4:</span> Share any extra information in the email, and send</li>
+  		</div>
+		</div>
+	</div>
+    <hr />
+<h2>CATEGORIES</h2> 
+	<a href="https://sportexapparel.box.com/s/aekbaphnkil22emud3onzlq0oiroxl28" target="search_iframe" id="mktable1">ALL</a>
+  <a href="https://sportexapparel.box.com/s/c01ihjji9dpwn8s31js6i4bua8hl84dp" target="search_iframe" id="mktable1">BUTTONDOWNS & POLOS</a>
+  <a href="https://sportexapparel.box.com/s/16d8x90bcqn3iyuoe07f3qqqckbv6m9l" target="search_iframe" id="mktable1">TEES</a>
+  <a href="https://sportexapparel.box.com/s/kifghcq3vhpphc1zxhvcin8p7nrvm01t" target="search_iframe" id="mktable1">SIGNAGE</a>
+  <a href="https://sportexapparel.box.com/s/1com2ssbhb7nxeyn18lmkun41phoxrvu" target="search_iframe" id="mktable1">JACKETS & PULLOVERS</a>
+  <a href="https://sportexapparel.box.com/s/1o6knt6csuqgvdh16yjuq5ijvrqvhgxm" target="search_iframe" id="mktable1">VESTS AND WORKWEAR</a>
+  <a href="https://sportexapparel.box.com/s/n3h9zascy1l67dgb0n3q32gol9b4irv5" target="search_iframe" id="mktable1">ACCESSORIES</a>
+  <a href="https://sportexapparel.box.com/s/v9oh39zckqf3lwcxe88lkoc2f4tfpw7r" target="search_iframe" id="mktable1">HEADWEAR</a>
+
+
+<div id="box-iframe">
+<iframe src="https://sportexapparel.box.com/s/aekbaphnkil22emud3onzlq0oiroxl28" width="100%" height="1400px" style="border:none;" name="search_iframe"></iframe>
+</div>
+</div>
+<script type="text/javascript">
+$(".modal-button").click(function(){
+  if($(this).parent().hasClass("active")) {
+    $(this).parent().removeClass("active");  
+  } else {
+    $(this).parent().addClass("active");
+  }
+});</script>
+</body>
+</html>

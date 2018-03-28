@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apache Client Room</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"></style>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <script src="clipboard.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <meta charset="utf-8">
+</head>
+<body>
+<div id="app-container">
+    <h1>APACHE CLIENT ROOM</h1>
+    <div class="wrap">
+		<div class="modal-container">
+  			<button class="modal-button">?</button>
+  		<div class="modal">
+        	<li class="howto"><span class="bold">Step 1:</span> Select the category below that you would like to view past proofs from</li>
+        	<li class="howto"><span class="bold">Step 2:</span> Download any proofs you would like to use to order</li>
+        	<li class="howto"><span class="bold">Step 3:</span> Attach your download on an email to sales@sportexapparel.com</li>
+        	<li class="howto"><span class="bold">Step 4:</span> Share any extra information in the email, and send</li>
+  		</div>
+		</div>
+	</div>
+    <hr />
+<h2>CATEGORIES</h2> 
+	<a href="https://sportexapparel.box.com/s/mqv6srcp0b8cpspf0hs5r45vg1cmqyd3" target="search_iframe" id="mktable1">ALL</a>
+    <a href="https://sportexapparel.box.com/s/ebnzi5l0z6edp4sw6blopec4ew96e86a" target="search_iframe" id="mktable1">SIGNAGE</a>
+    <a href="https://sportexapparel.box.com/s/oh3exx1dcexfnmiz0qrq8d9iyl0x36cp" target="search_iframe" id="mktable1">TEES & JACKETS</a>
+    <a href="https://sportexapparel.box.com/s/fdrw4u0nh9vfvuea5ats348cyotdoj7j" target="search_iframe" id="mktable1">VESTS</a>
+    <a href="https://sportexapparel.box.com/s/0kqvpnmcucvp6tptoj81r4bhw7qxn1ga" target="search_iframe" id="mktable1">BUTTONDOWNS & POLOS</a>
+    <a href="https://sportexapparel.box.com/s/ipo3s0f5j1zg6gjfsn21maj95wb82jcc" target="search_iframe" id="mktable1">HATS</a>
+	<a href="https://sportexapparel.box.com/s/miol1inlug7rr5gj8k1c8thnzcfl1boq" target="search_iframe" id="mktable1">COVERALLS</a>
+	<a href="https://sportexapparel.box.com/s/sgqjehrm89j91c3qdk7837pso63cf27f" target="search_iframe" id="mktable1">ACCESSORIES</a>
+
+    <!--
+    <a href="#" id="mktable1">EXTREME HOUSEKEEPING</a>
+    <a href="#" id="mktable1">HEAT/HYDRATION</a>
+    <a href="#" id="mktable1">PPE</a>
+    <a href="#" id="mktable1">LOCKOUT TAGOUT</a>
+    <a href="#" id="mktable1">UNION TRADES</a>
+    <a href="#" id="mktable1">DROPPED OBJECTS</a>
+    -->
+<div id="box-iframe">
+<iframe src="https://sportexapparel.box.com/s/mqv6srcp0b8cpspf0hs5r45vg1cmqyd3" width="100%" height="1400px" style="border:none;" name="search_iframe"></iframe>
+</div>
+</div>
+<script type="text/javascript">
+$(".modal-button").click(function(){
+  if($(this).parent().hasClass("active")) {
+    $(this).parent().removeClass("active");  
+  } else {
+    $(this).parent().addClass("active");
+  }
+});</script>
+</body>
+</html>

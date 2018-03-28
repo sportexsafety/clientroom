@@ -1,0 +1,366 @@
+@font-face {
+    font-family: 'Black';
+    src: url('https://www.sportexsafety.com/fonts/black.eot');
+    src: url('https://www.sportexsafety.com/fonts/black.eot?#iefix') format('embedded-opentype'),
+         url('https://www.sportexsafety.com/fonts/black.woff') format('woff'),
+         url('https://www.sportexsafety.com/fonts/black.ttf') format('truetype'),
+         url('https://www.sportexsafety.com/fonts/black.svg#black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: #f2f2f2;
+}
+#app-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Begin Header Styling */
+h1{
+    font-family: Black, Arial;
+    font-weight: 900;
+    color: #d8c726;
+    display: inline-block;
+    margin-top: 50px;
+}
+.howto{
+    font-family: 'Open Sans', sans-serif;
+    list-style-type: none;
+    font-size: 10pt;
+    padding-bottom: 10px;
+}
+.bold{
+font-weight: 700;
+}
+
+h2{
+    font-family: Black, Arial;
+    font-weight: 900;
+    font-size: 12pt;
+    margin-bottom: 15px;
+}
+/* End Header Styling */
+
+/* Begin List Styling */
+.catlist{
+    vertical-align: top;
+    list-style-type: none;
+    padding: 0 60px 0 3px;
+    margin-top: 8px;
+    display:inline-block;
+}
+.catlist li{
+    line-height: 32px;
+}
+.brandit{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+/* End List Styling */
+
+/* Begin Checkbox Styling */
+input[type="checkbox"] {
+    display:none;
+}
+.big{
+    vertical-align: baseline;
+}
+input[type="checkbox"] + label {
+    color:#333333;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+
+}
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:15px;
+    height:15px;
+    margin:-4px 10px 0 0;
+    vertical-align:middle;
+    border: 1px solid #333333;
+    background-color: #FFF;
+}
+
+input[type="checkbox"]:checked + label span {
+    background-color: #333;
+}
+/* End Checkbox Styling */
+
+#mktable1, #cptable{
+    padding: 15px 20px 15px 17px;
+    margin-bottom: 10px;
+    background-color: #333;
+    display: inline-block;
+    font-family: Black, Arial;
+    font-size: 12px;
+    color: white;
+}
+a#mktable1:hover{
+    background-color: black;
+}
+#mktable2, #cptable{
+    padding: 15px 20px 15px 17px;
+    margin-bottom: 10px;
+    background-color: #333;
+    display: inline-block;
+    font-family: Black, Arial;
+    color: white;
+}
+a#mktable2:hover{
+    background-color: black;
+}
+a#cptable:hover{
+    background-color: black;
+}
+#myTableData{
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+#success{
+    position: relative;
+    margin-left: 10px;
+    margin-top: 0px;
+    display: inline-block;
+}
+.in-out{
+    font-family: 'Open Sans', sans-serif;
+    color:white;
+}
+.in-out{
+    display: inline-block;
+    position: relative;
+    background: #333;
+    padding: 14px;
+}
+.in-out:after {
+    content: '';
+    display: block;  
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    margin-top: -10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #333;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+
+/* Begin Dropdown Styling */
+
+::selection {
+    background: transparent; 
+}
+
+::-moz-selection {
+    background: transparent; 
+}
+
+.wrapper-demo {
+    margin: 60px 0 0 0;
+    *zoom: 1;
+    font-weight: 400;
+}
+
+.wrapper-demo:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/* DEMO 1 */
+
+.wrapper-dropdown-1 {
+    /* Size and position */
+    position: relative; /* Enable absolute positionning for children and pseudo elements */
+    width: 200px;
+    padding: 10px;
+    margin: 0 auto;
+
+    /* Styles */
+    background: #f2f2f2;
+    color: #333;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #333;
+    background-color: #FFF;
+
+    /* Font settings */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper-dropdown-1:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    margin-top: -6px;
+    border-width: 6px 0 6px 6px;
+    border-style: solid;
+    border-color: transparent #333;    
+}
+
+.wrapper-dropdown-1 .dropdown {
+    /* Size & position */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    /* Styles */
+    background: #fff;
+    list-style: none;
+    font-weight: normal; /* Cancels previous font-weight: bold; */
+
+    /* Hiding */
+    opacity: 0;
+    pointer-events: none;
+}
+
+.wrapper-dropdown-1 .dropdown li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+}
+
+/* Hover state */
+.wrapper-dropdown-1 .dropdown li:hover a {
+    background: #333;
+    color: #fff;
+}
+
+/* Active state */
+.wrapper-dropdown-1.active .dropdown {
+    opacity: 1;
+    width: 220px;
+    pointer-events: auto;
+    margin-left: -1px;
+    border: 1px solid #333;
+    padding: 0;
+}
+
+.wrapper-dropdown-1.active:after {
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px ;
+    margin-top: -3px;
+}
+
+.wrapper-dropdown-1.active {
+  color: #666;
+  background: #fff;
+}
+
+/* No CSS3 support */
+
+.no-opacity       .wrapper-dropdown-1 .dropdown,
+.no-pointerevents .wrapper-dropdown-1 .dropdown {
+    display: none;
+    opacity: 1; /* If opacity support but no pointer-events support */
+    pointer-events: auto; /* If pointer-events support but no pointer-events support */
+}
+
+.no-opacity       .wrapper-dropdown-1.active .dropdown,
+.no-pointerevents .wrapper-dropdown-1.active .dropdown {
+    display: block;
+}
+/*Handle long list */
+.dropdown{
+    max-height: 180px;
+    overflow: scroll;
+}
+
+.scrollbar
+{
+    margin-left: 30px;
+    float: left;
+    height: 300px;
+    width: 65px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-bottom: 25px;
+}
+
+.force-overflow
+{
+    min-height: 450px;
+}
+
+
+
+/*
+ *  custom scrollbar
+ */
+
+#style-3::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #666;
+}
+
+#style-3::-webkit-scrollbar
+{
+    width: 6px;
+    background-color: #666;
+}
+
+#style-3::-webkit-scrollbar-thumb
+{
+    background-color: #d8c726;
+}
+/*End Dropdown Styling */
+
+
+.modal-container {
+  position: relative;
+  width: 600px;
+}
+.modal-container * {
+  color: #fff;
+}
+.modal-container .modal-button {
+  width:30px;
+  height: 30px;
+  line-height: 10px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border: 2px solid #999;
+  font-size: 90%;
+  background-color: #999;
+  color: #f2f2f2;
+}
+.modal-container .modal-button:hover {
+  background-color: #333;
+  border: 2px solid #333;
+  color: white;
+}
+.modal-container .modal {
+  position: absolute;
+  background-color: #333;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 25px 25px 15px 25px;
+  transform-origin: center top;
+  transform: rotateX(-90deg);
+  transition: transform 0.5s;
+-webkit-box-shadow: 0px 0px 34px 0px rgba(0,0,0,0.50);
+-moz-box-shadow: 0px 0px 34px 0px rgba(0,0,0,0.50);
+box-shadow: 0px 0px 34px 0px rgba(0,0,0,0.50);
+}
+.wrap{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+.active .modal {
+  transform: perspective(2000px) rotateX(0deg);
+  position: relative;
+}

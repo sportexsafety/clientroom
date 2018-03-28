@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kiewit Client Room - Apparel</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css"></style>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <script src="clipboard.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <meta charset="utf-8">
+</head>
+<body>
+<div id="app-container">
+    <h1>KIEWIT CLIENT ROOM</h1>
+    <div class="wrap">
+		<div class="modal-container">
+  			<button class="modal-button">?</button>
+  		<div class="modal">
+        	<li class="howto"><span class="bold">Step 1:</span> Select the category below that you would like to view proofs from</li>
+        	<li class="howto"><span class="bold">Step 2:</span> Download any proofs you would like to order</li>
+        	<li class="howto"><span class="bold">Step 3:</span> Attach your download on an email to sales@sportexapparel.com</li>
+        	<li class="howto"><span class="bold">Step 4:</span> Share any extra information in the email, and send</li>
+  		</div>
+		</div>
+	</div>
+    <hr />
+    <ul class="nav">
+        <li class="navitem"><a class="navlink" href="../apparel/index.html">APPAREL</a></li>
+        <li class="navitem"><a class="navlink" href="../accessories/index.html">ACCESSORIES</a></li>
+        <li class="navitem"><a class="navlink" href="../signage/index.html">SIGNAGE</a></li>
+    </ul>
+<h2>APPAREL CATEGORIES</h2> 
+	<a href="https://sportexapparel.box.com/s/xreq9qygtbyuu7hal4w9aqj88gvw58iz" target="search_iframe" id="mktable1">VESTS</a>
+    <a href="https://sportexapparel.box.com/s/k60tp0itmkrtqa21h1w5hz0frf0h9es2" target="search_iframe" id="mktable1">POLOS</a>
+    <a href="https://sportexapparel.box.com/s/rnbiab7r1q15pbqq3y12mdttmwf20b2z" target="search_iframe" id="mktable1">BUTTONDOWNS</a>
+    <a href="https://sportexapparel.box.com/s/nktp6piop0en8g1ghvjr7zoxga1jt4fu" target="search_iframe" id="mktable1">WORK TEES</a>
+    <a href="https://sportexapparel.box.com/s/60t02ub64lmxt28cdujkcr56pft1t6ps" target="search_iframe" id="mktable1">T-SHIRTS</a>
+    <a href="https://sportexapparel.box.com/s/6cr8bfu6ifd7hw499dj5vvaprxs217tq" target="search_iframe" id="mktable1">JACKETS</a>
+    <a href="https://sportexapparel.box.com/s/y1zmediy8qna2hq0u4fyz50rv87sk1wc" target="search_iframe" id="mktable1">HOODIES, PULLOVERS, SWEATSHIRTS</a>
+    <a href="https://sportexapparel.box.com/s/fv309oetg2onp9z16iqqtvswvqe5da8d" target="search_iframe" id="mktable1">PANTS AND OUTERWEAR</a>
+    <a href="https://sportexapparel.box.com/s/8wtzj3n1f2w0uwyl635zowuvqyt9vfbh" target="search_iframe" id="mktable1">HEADWEAR</a>
+<div id="box-iframe">
+<iframe src="https://sportexapparel.box.com/s/xreq9qygtbyuu7hal4w9aqj88gvw58iz" width="100%" height="1200px" style="border:none;" name="search_iframe"></iframe>
+</div>
+</div>
+<script type="text/javascript">
+$(".modal-button").click(function(){
+  if($(this).parent().hasClass("active")) {
+    $(this).parent().removeClass("active");  
+  } else {
+    $(this).parent().addClass("active");
+  }
+});</script>
+</body>
+</html>
