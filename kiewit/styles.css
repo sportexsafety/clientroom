@@ -65,6 +65,22 @@ h2{
     display: inline-block;
 }
 
+#welcome .nav .subcat{
+    margin: 30px 0px;
+}
+
+#welcome .nav{
+    background-color: #333;
+    padding: 40px;
+}
+#welcome h2{
+    font-family: Arial;
+    color: #999;
+}
+#welcome h2 .navlink{
+    background-color: #333;
+}
+
 /* End List Styling */
 
 /* Begin Checkbox Styling */
