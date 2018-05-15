@@ -57,6 +57,14 @@ h2{
     list-style-type: none;
     margin-bottom: 10px;
 }
+.subcat{
+    list-style-type: none;
+    padding-left: 0;
+}
+.subcat li{
+    display: inline-block;
+}
+
 /* End List Styling */
 
 /* Begin Checkbox Styling */
@@ -91,7 +99,8 @@ input[type="checkbox"]:checked + label span {
 #mktable1, #cptable{
     padding: 15px 20px 15px 17px;
     margin-bottom: 10px;
-    background-color: #333;
+    margin-right: 5px;
+    background-color: #464646;
     display: inline-block;
     font-family: Black, Arial;
     font-size: 12px;
@@ -320,26 +329,25 @@ a{
 
 .modal-container {
   position: relative;
-  width: 600px;
+  max-width: 750px;
 }
 .modal-container * {
   color: #fff;
 }
 .modal-container .modal-button {
-  width:30px;
-  height: 30px;
+  width:100px;
+  height: 50px;
   line-height: 10px;
   font-size: 20px;
   border: none;
   outline: none;
-  border: 2px solid #999;
   font-size: 90%;
-  background-color: #999;
+  font-family: Black, Arial;
+  background-color: #333;
   color: #f2f2f2;
 }
 .modal-container .modal-button:hover {
   background-color: #333;
-  border: 2px solid #333;
   color: white;
 }
 .modal-container .modal {
@@ -363,6 +371,7 @@ box-shadow: 0px 0px 34px 0px rgba(0,0,0,0.50);
 .active .modal {
   transform: perspective(2000px) rotateX(0deg);
   position: relative;
+  padding: 20px 40px 20px 40px;
 }
 
 .nav {
@@ -379,11 +388,11 @@ box-shadow: 0px 0px 34px 0px rgba(0,0,0,0.50);
     padding: 15px;
     font-family: 'Arial', sans-serif;
     font-weight: 900;
-    color: black;
-    border: .5px solid black;
+    color: white;
+    border: .5px solid #d8c825;
     margin-right: 5px;
 }
 
 .navlink:hover {
-    background-color: #a5a5a5;
+    color: #d8c825;
 }
